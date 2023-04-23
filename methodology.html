@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.15/dist/css/uikit.min.css" />
+</head>
+
+<body>
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div uk-navbar>
+
+                <div class="uk-navbar-left">
+
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="/index.html">Home</a></li>
+                        <li>
+                            <a href="#">Manuscript</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class=""><a href="introduction.html">Introduction</a></li>
+                                    <li class="uk-active"><a href="methodology.html">Methodology</a></li>
+                                    <li><a href="results.html">Results and Discussion</a></li>
+                                    <li><a href="summary.html">Summary and Conclusions</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="uk-navbar-right">
+
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="#">Researchers</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#">Flores, Jann Marcus</a></li>
+                                    <li><a href="#">Gaudier, Ian Guilan</a></li>
+                                    <li><a href="#">Lauchengco, Allona</a></li>
+                                    <li><a href="#">Pasco, Nico Martin</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <main style="margin-bottom:12rem;">
+        <div class="uk-container">
+            <ul uk-tab class="uk-margin-large-top">
+                <li><a href="#">Software Development Method</a></li>
+                <li><a href="#">System Architecture</a></li>
+                <li><a href="#">Context Diagram (Level 0)</a></li>
+            </ul>
+
+            <ul class="uk-switcher uk-margin">
+                <li>
+                    Because demand is constantly changing and deliverables must be supplied to the client quickly, the
+                    researchers need flexible and adaptable development approaches. It can be accomplished by breaking
+                    up the development process into brief cycles or iterations that last a few times a week so that at
+                    the end of each cycle the internal team or external customer can get a version of the project that
+                    has a value. Following this, the researchers utilized the Scrum Methodology.
+                    <img src="https://www.pm-partners.com.au/wp-content/uploads/2021/06/blog-scrum-process-opt.jpg"
+                        height="360" width="720">
+                </li>
+                <li>
+                    <p> The figure shows the system architecture that can accomplish the customer requirements using
+                        various
+                        frameworks and libraries.</p>
+
+                    <dl class="uk-description-list">
+                        <dt><span class="uk-label">Presentation Layer</span></dt>
+                        <dd> The presentation layer is made of the five (5) major features and the
+                            interface will be displayed via PHP and Bootstrap 5 Framework for the components. </dd>
+                        <dt><span class="uk-label">Application Layer</span></dt>
+                        <dd> Laravel Framework
+                            and Jetstream will be used primarily for authentication and for processing data as well as
+                            for
+                            performing query to the database. </dd>
+                        <dt><span class="uk-label">Data Layer</span></dt>
+                        <dd> The database will be PostgreSQL and the web system will be hosted
+                            via Heroku.</dd>
+                    </dl>
+                    <br>
+                    <img src="images/system_architecture.png" alt="" height="360" width="720">
+                </li>
+                <li>
+                    <p>
+                        The figure below shows the Level 0 Context Diagram of the IMS.
+                    </p>
+                    <dl class="uk-description-list">
+                        <dt><span class="uk-label">Resource Persons</span></dt>
+                        <dd> Resource persons are the users that
+                            are allowed
+                            to perform the household profiling. It refers to the entities assigned by the Barangay 385
+                            to
+                            perform the household profiling.</dd>
+                        <dt><span class="uk-label">Barangay Secretary</span></dt>
+                        <dd> Barangay secretary is the user that can generate forms, and it also
+                            serves as the master account since it can access all modules of the system.</dd>
+                        <dt><span class="uk-label">Barangay Officials</span></dt>
+                        <dt> Barangay officials are
+                            the entities that can access the dashboard and generate a report regarding analytics and
+                            summary of
+                            key information of the data store.</dt>
+                        <dt><span class="uk-label">E-journalists</span></dt>
+                        <dd> On the other hand, E-journalist is the entity that can access the
+                            announcements module. Lastly, the residents are those who can view the official website of
+                            Barangay
+                            385.</dd>
+                    </dl>
+                    <p>In this illustration, it is exhibited that there is a centralized database that serve as the main
+                        datastore. In this way, there is interoperability between system modules such as the Descriptive
+                        Analytics aggregating information from Household Profiling, as well as the Forms Module
+                        retrieving
+                        names and other relevant information that come from the latter.</p>
+                    <br>
+                    <img src="images/context_diagram.png" alt="" height="360" width="720">
+
+                </li>
+            </ul>
+        </div>
+
+    </main>
+    <footer>
+        <div class="uk-section uk-section-secondary uk-margin-large-top">
+            <div class="uk-container">
+                <img src="https://lh3.googleusercontent.com/grjL6BED5_xBNVERBdkEMV73B2I7NFg62yAzGtPUi07l-HyIjThZxcjdrquas4aeKIdrOQwQHmL_ezG-9hApj3Ow-oRSB6_Hyfpm6WJz1soLG-hH8KNdT4Tkpc9a841o6w=w1280"
+                    alt="">
+                <p>363 P. Casal St., Quiapo, Manila</p>
+                <p>1338 Arlegui St., Quiapo, Manila</p>
+                <p>Tel. No: (+632) 8733-9117 </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.15/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.15/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
